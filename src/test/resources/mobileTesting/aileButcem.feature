@@ -1,4 +1,3 @@
-@ab
 Feature: aile butcem uygulamasi fonksiyonlari test edilir
   Background: KULLANICILAR UYGULAMAYA GIRIS YAPMAK BU ADIMLARI YAZMAK ZORUNDALAR
 
@@ -16,3 +15,17 @@ Feature: aile butcem uygulamasi fonksiyonlari test edilir
       | isim |soyisim|sehir|yas|meslek|
       | Murat |Altin|Antalya|30|Hakim|
       | Nevzat |Kerim|Berlin|23|Doktor|
+
+  @ab
+  Scenario:
+
+    * anasayfadaki arti butonuna tiklayin
+    * "Gelir Ekle" Butonuna text uzerinden Tiklanir
+    * Gelir Ekle sayfasinda aciklama kismina "T130 Aciklama" deger girilir
+    * Gelir Ekle sayfasinda Gelir Tipi "Düzensiz" secilir
+    * Gelir Ekle sayfasinda Kategori "Serbest Gelir" secilir
+    * Gelir Ekle sayfasinda Tarih belirlemesi ve kac ay ilerleme 4 secimi gun "20" yapilir
+    * Gelir Ekle sayfasinda Tutar bilgisi girilir
+    * Kaydet Butonuna text uzerinden Tiklanir
+    * basariyla eklendigini dogrulayin
+    * Kullanici uygulamayi kapatir
